@@ -1,5 +1,6 @@
 .container {
     display: flex;
+    flex-direction: column;
     place-content: center;
     min-height: 100vh;
   
@@ -9,20 +10,26 @@
     background-color: hsl(var(--clr-neutral-200));
 }
 
-.img-region {
+.region-box {
+    display: flex;
+    width: 100%;
     height: 200px;
-    width: 200px;
+    margin: 10px;
+    border: 3px solid black;
+    background-color: #dfdfdf;
 }
 
-.border-primary-400 {
-    border: 2px solid #a775f1;
+.luzon-box {
+    flex: 1;
+    background-color: red;
 }
 
-img, picture {
-  max-width: 100%;
-  display: block;
+.visayas-box {
+    flex: 1;
+    background-color: blue;
 }
 
-header, footer {
-    padding: 10px;
+.mindanao-box {
+    flex: 1;
+    background-color: yellow;
 }
