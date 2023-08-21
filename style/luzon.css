@@ -1,0 +1,188 @@
+/* Applies to all parts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+}
+
+/* Applies to the header */
+.nav {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+    transition: color 0.3s;
+    display: flex;
+}
+
+.nav li {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.logo:hover{
+    font-weight: bold;
+}
+
+.li-home:hover, .li-visayas:hover,
+.li-intro:hover, .li-mindanao:hover,
+.li-luzon:hover {
+    z-index: 1;
+}
+
+.li-home:hover, .li-visayas:hover {
+    color: blue;
+}
+
+.li-intro:hover ,.li-mindanao:hover{
+    color:rgb(229, 229, 8);
+}
+
+.li-luzon:hover {
+    color: red;
+}
+
+.logo-img{
+    width: 60px;
+    height: auto;
+    align-self: center;
+    display: flex;
+    flex-shrink: 0;
+}
+
+header{
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 0 15px 0;
+    padding-right: 30px;
+    height: 70px;
+}
+
+.logo{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.logo-1, .logo-2, .logo-3{
+    font-size: 20px;
+}
+
+.logo-1 {
+    color: blue; 
+}
+  
+.logo-2 {
+    color: rgb(229, 229, 8); 
+}
+
+.logo-3 {
+    color: red; 
+}
+
+/* Applies to the footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-footer{
+    display: flex;
+}
+
+.credits{
+    font-size: x-small;
+}
+
+/* Content */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+}
+
+.paragraph-spacing {
+    margin-bottom: 20px;
+}
+
+.food-item {
+    border: 3px solid black;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f8f8f8;
+}
+
+.food-fig {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.food-fig img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.references {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    padding: 110px 100px;
+}
+
+/* For a mobile screens */
+@media (max-width: 600px) {
+    .logo-img{
+        width: 20px;
+        height: auto;
+    }
+
+    .logo{
+        font-size: 10px;
+    }
+
+    .nav{
+        font-size: 10px;
+        gap:2px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .logo-footer{
+        font-size: 10px;
+    }
+    
+    .credits{
+        font-size: 7px;
+        align-self: center;
+        flex-wrap: wrap;
+    }
+}
