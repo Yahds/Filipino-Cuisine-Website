@@ -1,48 +1,142 @@
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    place-content: center;
-    min-height: 100vh;
-  
-    font-family: var(--ff-primary);
-    font-weight: var(--fw-400);
-  
-    background-color: hsl(var(--clr-neutral-200));
+/* Applies to all parts */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.region-box {
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ul{
+    list-style: none;
     display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+    transition: color 0.3s;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+}
+
+/* Applies to the header */
+.nav{
+    justify-content: flex-end;
+}
+
+.logo:hover{
+    font-weight: bold;
+}
+
+.li-home:hover, .li-visayas:hover,
+.li-intro:hover, .li-mindanao:hover,
+.li-luzon:hover {
+    z-index: 1;
+}
+
+.li-home:hover, .li-visayas:hover {
+    color: blue;
+}
+
+.li-intro:hover ,.li-mindanao:hover{
+    color:rgb(229, 229, 8);
+}
+
+.li-luzon:hover {
+    color: red;
+}
+
+.logo-img{
+    width: 60px;
+    height: auto;
+    align-self: center;
+    display: flex;
+    flex-shrink: 0;
+}
+
+header{
+    background-color: white;
+    position: fixed;
     width: 100%;
-    height: 200px;
-    margin: 3px;
-    border: 3px solid black;
-    background-color: #dfdfdf;
+    z-index: 1000;
 }
 
-.luzon-box, .visayas-box, .mindanao-box {
+header{
     display: flex;
-    flex-direction: row;
-    flex: 1;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 0 15px 0;
+    padding-right: 30px;
+    height: 70px;
 }
 
-.luzon-box {
-    background-color: red;
+.logo{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
 }
 
-.visayas-box {
-    flex: 1;
-    background-color: blue;
+.logo-1, .logo-2, .logo-3{
+    font-size: 20px;
 }
 
-.mindanao-box {
-    flex: 1;
-    background-color: yellow;
+.logo-1 {
+    color: blue; 
+}
+  
+.logo-2 {
+    color: rgb(229, 229, 8); 
 }
 
-.region-img {
-    height: 200px;
-    width: 200px;
-    margin-right: 5px;
-    border-right: 3px solid black;
+.logo-3 {
+    color: red; 
 }
+
+/* Applies to the first section */
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 110px 100px;
+}
+
+.box{
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+.box .boxImg{
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.6)), url(./images/index-img.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+    opacity: 30;
+}
+
+/* Applies to the footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-footer{
+    display: flex;
+}
+
+.credits{
+    font-size: x-small;
+}
+
