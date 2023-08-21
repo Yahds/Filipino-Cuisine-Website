@@ -43,7 +43,7 @@ header{
     justify-content: flex-end;
     width: 100%;
     gap: 25px;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .logo:hover{
@@ -77,7 +77,7 @@ header{
 
 .logo{
     justify-content: start;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .logo-1 {
@@ -92,11 +92,12 @@ header{
     color: red; 
 }
 
-/* Applies to the first section */
+/* Applies to the first section (box) */
 section{
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 20px;
     padding: 110px 100px;
 }
 
@@ -118,6 +119,106 @@ section{
     background-size: cover;
     z-index: -1;
     opacity: 30;
+}
+
+.intro-button{
+    cursor: pointer;
+    background-color: white;
+    color: #000000;
+    border: none;
+    border-radius: 8%;
+    margin-top: 40px;
+    font-size: 20px;
+    padding: 10px 10px 10px;
+}
+.h4-txt {
+    margin-top: 20px;
+    width: 60%;
+}
+.h1-txt:hover {
+    color: rgb(88, 88, 255);
+}
+.h4-txt:hover {
+    color: yellow;
+}
+.intro-button:hover {
+    background-color: rgb(255, 91, 91);
+}
+
+/* Applies to the second section (box-1) */
+.box-1{
+    justify-content: center;
+    text-align: center;
+    color: black;
+    padding: 0%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+
+/* Applies to the third section (philippines) */
+.philippines{
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 100%;
+}
+
+.p-column{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    gap: 30px;
+}
+
+.p-img-container1, .p-img-container2, .p-img-container3 {
+    width: 70%;
+}
+
+.p-img-container1{
+    background-color: rgb(88, 88, 255);
+}
+
+.p-img-container2{
+    background-color: yellow;
+}
+
+.p-img-container3{
+    background-color: rgb(255, 91, 91);
+}
+
+.p-outline-img.top{
+    background-image: url('./images/luzon-outline.png');
+    transition: background-image 0.3s;
+}
+
+.p-outline-img.top, .p-outline-img.middle, .p-outline-img.bottom {
+
+    padding-top: 450px;
+    background-image: url('./images/outline.png');
+    background-repeat: no-repeat;
+    background-size: 325px;
+    background-color: white;
+    transition: background-image 0.3s;
+    border-radius: 80%;  
+}
+
+
+.p-img-container1:hover .p-outline-img.top {
+    background-image: url('./images/Luzon.png'); 
+    cursor:pointer;
+}
+
+.p-img-container2:hover .p-outline-img.middle {
+    background-image: url('./images/Visayas.png');
+    cursor:pointer;
+}
+
+.p-img-container3:hover .p-outline-img.bottom {
+    background-image: url('./images/Mindanao.png');
+    cursor:pointer;
 }
 
 /* Applies to the footer */
