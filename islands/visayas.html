@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/visayas.css">
+    <link rel="icon" type="image/png" size="16x16" href="../images/LP.png">
+    <title>Visayas Dishes</title>
+</head>
+
+<body>
+    <header>
+        <div class = "logo-img-container">
+            <img class = "logo-img" src = "../images/LP.png">
+        </div>
+        <div class = "logo">
+            <div class = "logo-1">Lu</div><div class = "logo-2">tong</div><div class = "logo-3">Pinoy</div>
+        </div>
+        <ul class = "nav">
+            <li><a class = "li-home" href = "../index.html">Home</a></li>
+            <li><a class = "li-intro" href = "../islands/intro.html">Introduction</a></li>
+            <li><a class = "li-luzon" href = "../islands/luzon.html">Luzon</a></li>
+            <li><a class = "li-mindanao" href = "../islands/mindanao.html">Visayas</a></li>
+            <li><a class = "li-visayas" href = "../islands/visayas.html">Mindanao</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <img src="../images/Visayasimgs/sun.png" id="sun">
+        <img src="../images/Visayasimgs/mainback.png" id="mainback">
+        <h2 id="text">Welcome to Visayas!</h2>
+        <img src="../images/Visayasimgs/front.png" id="front">
+    </section>
+
+    <div class="sec" id="sec">
+        <h2>Foods in visayas</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to 
+            make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
+            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+            Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions 
+            of Lorem Ipsum.<br><br></p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to 
+            make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
+            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+            Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions 
+            of Lorem Ipsum.<br><br></p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to 
+            make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
+            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+            Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions 
+            of Lorem Ipsum.<br><br></p>
+    </div>
+
+    <script>
+        let sun = document.getElementById('sun');
+        let initialSunTop = parseFloat(getComputedStyle(sun).top);
+        let mainback = document.getElementById('mainback');
+        let text = document.getElementById('text');
+        let front= document.getElementById('front');
+
+        window.addEventListener('scroll', function(){
+              let value = window.scrollY;
+              let sunNewTop = initialSunTop + value * .94;
+              sun.style.top = sunNewTop + 'px';
+              mainback.style.top = value * 0.5 + 'px';
+              front.style.top = value * 0 + 'px';
+              text.style.marginRight = value * 3 + 'px';
+              text.style.marginTop = value * 0.6 + 'px';
+              header.style.top = value * 0.5 + 'px';
+            })
+    </script>
+
+    <footer>
+        <div class = "logo-img-container-footer">
+            <img class = "logo-img" src = "../images/LP.png">
+        </div>
+        <div class = "logo-footer">
+            <div class = "logo-1">Lu</div><div class = "logo-2">tong</div><div class = "logo-3">Pinoy</div>
+        </div>
+        <div class = "credits">© Antonio-Ferriol-Molintas-Saguid-Tumaliuan</div>
+    </footer>
+</body>
+</html>

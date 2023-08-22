@@ -119,7 +119,11 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 70px;
+    padding-top: 67px;
+}
+
+.content p {
+    padding: 10px;
 }
 
 .paragraph-spacing {
@@ -128,7 +132,7 @@ footer {
 
 .food-item {
     border: 3px solid black;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     padding: 10px;
     background-color: #f8f8f8;
 }
@@ -155,6 +159,10 @@ figcaption {
     flex-direction: column;
     align-items: normal;
     padding: 110px 100px;
+}
+
+.references p {
+    padding: 10px;
 }
 
 /* For a mobile screens */

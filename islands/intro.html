@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+    <style>
+        /* css styles for the Intro part  */
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #d2b28c; 
+        }
+
+        header {
+            background-color: #B99976;
+            position: fixed;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+            padding: 0 15px;
+            height: 70px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        footer {
+            background-color: #B99976;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+            padding: 0 15px;
+            height: 70px;
+            position: fixed;
+            bottom: 0;
+        }
+
+        .intro-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 100px 50px; 
+            background-color: #f4f4f4;
+        }
+        
+        .intro-left {
+            flex: 1;
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+        }
+        
+        .intro-left img {
+            max-width: 30%;
+            height: auto;
+            margin-bottom: 20px; 
+        }
+        
+        .intro-buttons {
+            margin-top: 20px;
+        }
+        
+        .intro-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .intro-button.luzon {
+            background-color: #79addc;
+        }
+
+        .intro-button.visayas {
+            background-color: #ffee93;
+        }
+
+        .intro-button.mindanao {
+            background-color: #ffc09f;
+        }
+        
+        .intro-button:hover {
+            opacity: 0.9;
+        }
+        
+        .intro-right {
+            flex: 2;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .intro-right p {
+            margin-bottom: 20px;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+            text-align: center;
+        }
+        
+        /* For smaller screens */
+        @media (max-width: 768px) {
+            .intro-section {
+                flex-direction: column;
+                padding: 50px;
+            }
+        
+            .intro-left {
+                margin-bottom: 30px;
+            }
+        
+            .intro-right {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <h1>Exploring the Flavors of the Philippines</h1>
+        </header>
+        <section class="intro-section">
+            
+            <div class="intro-left">
+                <img src="./images/phisland.jpg">
+                <div class="intro-buttons">
+                    <a href="./luzon.html" class="intro-button luzon">Luzon</a>
+                    <a href="./visayas.html" class="intro-button visayas">Visayas</a>
+                    <a href="./mindanao.html" class="intro-button mindanao">Mindanao</a>
+                </div>
+            </div>
+            
+            <div class="intro-right">
+                <p>Welcome to a virtual feast that transports you to the heart of the Philippines' vibrant culinary landscape!</p>
+                <p>In a country known for its breathtaking landscapes and warm hospitality, the Philippines also boasts a rich and diverse culinary heritage that reflects its cultural tapestry.</p>
+                <p>This website is your gateway to discovering the hidden treasures of Filipino cuisine and enhancing your culinary tourism experience across this tropical paradise.</p>
+                <p>Buckle up as we take you on a gastronomic journey that will ignite your wanderlust and leave you craving for more.</p>
+                <p>Get ready to discover, savor, and experience the mouthwatering world of Filipino cuisine right from the comfort of your screen.</p>
+                <p>Let's dive in and explore the rich tapestry of flavors that await you in the Philippines!</p>
+            </div>
+        </section>
+        <footer>
+            <h1>A culinary journey</h1>
+        </footer>
+    </div>
+</body>
+</html>
