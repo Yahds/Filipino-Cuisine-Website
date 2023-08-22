@@ -10,33 +10,66 @@
 <body>
     <div class = "main-container">
         <header>
-            <div class = "logo-img-container">
-                <img class = "logo-img" src = "./images/LP.png">
+            <div class = "logo-header-container">
+                <img class = "logo-header" src = "./images/homeimgs/LP.png">
             </div>
-            <ul class = "logo">
-                <li class = "logo-1">Lu</li>
-                <li class = "logo-2">Tong</li>
-                <li class = "logo-3">Pinoy</li>
+            <ul class = "title-header">
+                <li class = "title-1-header">Lu</li>
+                <li class = "title-2-header">Tong</li>
+                <li class = "title-3-header">Pinoy</li>
             </ul>
             <ul class = "nav">
-                <li><a class = "li-home" href = "./index.html">Home</a></li>
-                <li><a class = "li-intro" href = "./islands/intro.html">Introduction</a></li>
-                <li><a class = "li-luzon" href = "./islands/luzon.html">Luzon</a></li>
-                <li><a class = "li-mindanao" href = "./islands/mindanao.html">Visayas</a></li>
-                <li><a class = "li-visayas" href = "./islands/visayas.html">Mindanao</a></li>
+                <li><a class = "nav-home" href = "./index.html">Home</a></li>
+                <li><a class = "nav-intro" href = "./islands/intro.html">Introduction</a></li>
+                <li><a class = "nav-luzon" href = "./islands/luzon.html">Luzon</a></li>
+                <li><a class = "nav-mindanao" href = "./islands/mindanao.html">Visayas</a></li>
+                <li><a class = "nav-visayas" href = "./islands/visayas.html">Mindanao</a></li>
+                <li><a class = "nav-about-us" href="#about-us-section">About us</a></li>
             </ul>
         </header>
-        <section class = "box">
-            <div class = "boxImg"></div>
-            <h1 class = "h1-txt">Famous Filipino Cuisine</h1>
-            <h4 class = h4-txt>"Embark on a culinary journey through the Philippines, where each region tells a delicious story. Filipino cuisine is a symphony of flavors that beckons the adventurous palate."</h4>
-            <a href="./islands/intro.html" class = "intro-button">Introduction</a>
+        <section class = "intro-section">
+            <div class = "intro-img-container"></div>
+            <h1 class = "intro-h1">Famous Filipino Cuisine</h1>
+            <h4 class = "intro-h4">"Embark on a culinary journey through the Philippines, where each region tells a delicious story. Filipino cuisine is a symphony of flavors that beckons the adventurous palate."</h4>
+            <a class = "intro-button" href="./islands/intro.html">Introduction</a>
         </section> 
-        <section class = "box-1">
-            <h1 class = "h1-txt-1">Uncover a world of flavors beneath!</h1>
-            <h4 class = h4-txt-1>With a mere click, watch the feast unfold.</h4>
-        </section>    
-        <section class = "philippines">
+        <section class = "preview-txt-section">
+            <div class = "preview-txt">Here is a delectable preview of each island's culinary gems.</div>
+        </section>
+        <section class = "preview-section">
+            <div class = "preview-1">
+                <div class = "preview-1-txt-container">
+                    <div class = "preview-1-title">Luzon</div>
+                    <div class = "preview-1-desc">Indulge in Luzon's Flavorful Sisig: a dish that dances with flavors and textures.</div>
+                </div>
+                <div class = "preview-1-img-container">
+                    <img class = "sisig" src = "./images/homeimgs/sisig.png">
+                </div>
+            </div>
+            <div class = "preview-2"> 
+                <div class = "preview-2-txt-container">
+                    <div class = "preview-2-title">Visayas</div>
+                    <div class = "preview-2-desc">Experience Visayas' Culinary Expertise with Lechon: a crispy, savory roast pig.</div>
+                </div>
+                <div class = "preview-2-img-container">
+                    <img class = "lechon" src = "./images/homeimgs/lechon.png">
+                </div>
+            </div>
+            <div class = "preview-3">
+                <div class = "preview-3-txt-container">
+                    <div class = "preview-3-title">Mindanao</div>
+                    <div class = "preview-3-desc">Savor Mindanao's Rich Curacha Delight: a crab that's truly a treasure.</div>
+                </div>
+                <div class = "preview-3-img-container">
+                    <img class = "curacha" src = "./images/homeimgs/curacha.png">
+                </div>
+            </div>
+        </section>
+        <section class = "map-txt-section">
+            <h1 class = "map-txt-1">Uncover a world of flavors beneath!</h1>
+            <h4 class = "map-txt-2">With a mere click, watch the feast unfold.</h4>
+        </section>   
+        <section class = "map-section">
             <div class = "p-column">
                 <div class="p-img-container1">
                     <a href = "./islands/luzon.html"><div class="p-outline-img top"></div></a>
@@ -48,14 +81,44 @@
                     <a href = "./islands/mindanao.html"><div class="p-outline-img bottom"></div></a>
                 </div>
             </div>
-        </section>   
+        </section> 
+        <section class = "fun-fact-section">
+            <div class = "fun-fact-img-container">
+                <img class = "banana-ketchup" src = "./images/homeimgs/banana-ketchup.png">
+            </div>
+            <div class = "fun-fact-txt-container">
+                <div class = "fun-fact-txt-1">Did you know?</div>
+                <div class = "fun-fact-txt-2"><span class = "banana">Banana </span><span class = "ketchup">Ketchup </span>is a thing!</div>
+                <div class = "fun-fact-txt-3">Bananas are not only eaten raw in the Philippines, but they are also used and eaten creatively by turning them into ketchup. It's sweet and sour flavor pairs well with a large variety of Filipino dishes.</div>
+            </div>
+        </section>  
+        <section id = "about-us-section">
+            <div class = about-us-container>
+                <div class = "about-us-txt-1">About Us</div>
+                <div class = "about-us-txt-2">Welcome to our virtual realm of flavors and culture! We are a passionate team of five computer science students studying at Saint Louis University, combining our love for technology with our taste for exploration.</div>
+                <div class = "about-us-txt-3">Meet the team</div>
+                <div class = "about-us-txt-4">
+                    <ul>
+                        <li>Peterjan Antonio</li>
+                        <li>Jericho Miles Ferriol</li>
+                        <li>Jonison Martel Molintas</li>
+                        <li>Haydee Shane Saguid</li>
+                        <li>Lyvette Claire Tumaliuan</li>
+                    </ul>
+                </div>
+                <div class = "about-us-txt-5">Our Project</div>
+                <div class = "about-us-txt-6">Our project is a culinary voyage through the diverse flavors of the Philippines. We've embarked on a digital journey to present and educate you about the rich food traditions from three captivating islands: Luzon, Visayas, and Mindanao.</div>
+            </div>
+        </section>
         <footer>
-            <div class = "logo-img-container-footer">
-                <img class = "logo-img" src = "./images/LP.png">
+            <div class = "logo-footer-container">
+                <img class = "logo-footer" src = "./images/homeimgs/LP.png">
             </div>
-            <div class = "logo-footer">
-                <div class = "logo-1">Lu</div><div class = "logo-2">tong</div><div class = "logo-3">Pinoy</div>
-            </div>
+            <ul class = "title-footer">
+                <li class = "title-1-footer">Lu</li>
+                <li class = "title-2-footer">Tong</li>
+                <li class = "title-3-footer">Pinoy</li>
+            </ul>
             <div class = "credits">© Antonio-Ferriol-Molintas-Saguid-Tumaliuan</div>
         </footer>
     </div>
