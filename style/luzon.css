@@ -104,11 +104,26 @@ footer{
 
 
 /* Content */
+.introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    width: 500px;
+    align-content: center;
+    inset: 0;
+    margin: auto;
+}
+
 .content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 67px;
+    padding-top: 10px;
+    width: 500px;
+    align-content: center;
+    inset: 0;
+    margin: auto;
 }
 
 .content p {
