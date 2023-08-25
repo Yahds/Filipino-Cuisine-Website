@@ -4,137 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/intro.css">
+    <link rel="icon" type="image/png" size="16x16" href="../images/LP.png">
     <title>Introduction</title>
-    <style>
-        /* css styles for the Intro part  */
-        
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #d2b28c; 
-        }
-
-        header {
-            background-color: #B99976;
-            position: fixed;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-transform: uppercase;
-            padding: 0 15px;
-            height: 70px;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        footer {
-            background-color: #B99976;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-transform: uppercase;
-            padding: 0 15px;
-            height: 70px;
-            position: fixed;
-            bottom: 0;
-        }
-
-        .intro-section {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 100px 50px; 
-            background-color: #f4f4f4;
-        }
-        
-        .intro-left {
-            flex: 1;
-            display: flex;
-            flex-direction: column; 
-            align-items: center;
-        }
-        
-        .intro-left img {
-            max-width: 30%;
-            height: auto;
-            margin-bottom: 20px; 
-        }
-        
-        .intro-buttons {
-            margin-top: 20px;
-        }
-        
-        .intro-button {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 10px;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-
-        .intro-button.luzon {
-            background-color: #79addc;
-        }
-
-        .intro-button.visayas {
-            background-color: #ffee93;
-        }
-
-        .intro-button.mindanao {
-            background-color: #ffc09f;
-        }
-        
-        .intro-button:hover {
-            opacity: 0.9;
-        }
-        
-        .intro-right {
-            flex: 2;
-            padding: 20px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        
-        .intro-right p {
-            margin-bottom: 20px;
-            font-size: 18px;
-            line-height: 1.6;
-            color: #333;
-            text-align: center;
-        }
-        
-        /* For smaller screens */
-        @media (max-width: 768px) {
-            .intro-section {
-                flex-direction: column;
-                padding: 50px;
-            }
-        
-            .intro-left {
-                margin-bottom: 30px;
-            }
-        
-            .intro-right {
-                padding: 15px;
-            }
-        }
-    </style>
 </head>
 <body>
-    <div class="main-container">
-        <header>
-            <h1>Exploring the Flavors of the Philippines</h1>
-        </header>
+    <header>
+        <div class = "logo-header-container">
+            <img class = "logo-header" src = "../images/homeimgs/LP.png">
+        </div>
+        <ul class = "title-header">
+            <li class = "title-1-header">Lu</li>
+            <li class = "title-2-header">Tong</li>
+            <li class = "title-3-header">Pinoy</li>
+        </ul>
+        <ul class = "nav">
+            <li><a class = "nav-home" href = "../index.html">Home</a></li>
+            <li><a class = "nav-luzon" href = "../islands/luzon.html">Luzon</a></li>
+            <li><a class = "nav-visayas" href = "../islands/visayas.html">Visayas</a></li>
+            <li><a class = "nav-mindanao" href = "../islands/mindanao.html">Mindanao</a></li>
+        </ul>
+    </header>
         <section class="intro-section">
             
             <div class="intro-left">
-                <img src="./images/phisland.jpg">
+                <img src="./images/introimgs/phisland.png" alt="phisland">
                 <div class="intro-buttons">
                     <a href="./luzon.html" class="intro-button luzon">Luzon</a>
                     <a href="./visayas.html" class="intro-button visayas">Visayas</a>
@@ -143,16 +37,20 @@
             </div>
             
             <div class="intro-right">
-                <p>Welcome to a virtual feast that transports you to the heart of the Philippines' vibrant culinary landscape!</p>
-                <p>In a country known for its breathtaking landscapes and warm hospitality, the Philippines also boasts a rich and diverse culinary heritage that reflects its cultural tapestry.</p>
-                <p>This website is your gateway to discovering the hidden treasures of Filipino cuisine and enhancing your culinary tourism experience across this tropical paradise.</p>
-                <p>Buckle up as we take you on a gastronomic journey that will ignite your wanderlust and leave you craving for more.</p>
-                <p>Get ready to discover, savor, and experience the mouthwatering world of Filipino cuisine right from the comfort of your screen.</p>
-                <p>Let's dive in and explore the rich tapestry of flavors that await you in the Philippines!</p>
+                <p>Filipino cuisine is a reflection of the influences from the country’s History of colonization, trade and migration. While the cuisine is in a constant state of growing and changing, the Filipino culture and cooking techniques are still evident in each dish. The global popularity of Filipino cuisine is steadily rising. For instance, famous YouTubers such as The Sunbae Club and People Vs Food have introduced Filipino food to their own people in their country.</p>
+                <p>In a 2018 study conducted by YouGov involving 25,000 people across 24 countries including the Philippines, Thailand, Australia and among others.This study was conducted to learn and gain insights about the food preferences of these countries. According to the results, 67 percent of the Filipinos favored and were open-minded about any cuisine from other countries. Unfortunately, other countries were not the same with the Filipino Cuisine, as the survey results showed that it was under-appreciated by the other countries. Thus, this website serves as a platform to introduce and encourage other individuals from various nationalities,including those within the Philippines, to try out our food and gain knowledge on the newest trends.</p>
             </div>
         </section>
         <footer>
-            <h1>A culinary journey</h1>
+            <div class = "logo-footer-container">
+                <img class = "logo-footer" src = "../images/homeimgs/LP.png">
+            </div>
+            <ul class = "title-footer">
+                <li class = "title-1-footer">Lu</li>
+                <li class = "title-2-footer">Tong</li>
+                <li class = "title-3-footer">Pinoy</li>
+            </ul>
+            <div class = "credits">© Antonio-Ferriol-Molintas-Saguid-Tumaliuan</div>
         </footer>
     </div>
 </body>
