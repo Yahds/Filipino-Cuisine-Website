@@ -1,0 +1,490 @@
+
+/* All */
+body{
+    font-family: sans-serif;
+    transition: 0.3s;
+    padding: 0%;
+    margin: 0%;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+    transition: color 0.3s;
+}
+
+.main-container{
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Navigation Bar */
+.navbar{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 12%;
+    top:0;
+    left:0;
+    right:0;
+    background-color:whitesmoke;   
+}
+
+.nav-logo{
+    display: flex;
+}
+
+.nav-logo-img{
+    width: 10vmin;
+    height: 10vmin;
+    align-self: center;
+}
+
+.nav-title{
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 3vmin;
+    padding: 0;
+}
+
+.nav-title-1{
+    color: blue;
+}
+
+.nav-title-2{
+    color: rgb(205,201,66); 
+}
+
+.nav-title-3, .nav-links a:hover{
+    color: red;
+}
+
+.nav-links{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.9vmin;
+    justify-content: end;
+    width: 100%;
+}
+
+.nav-links li{
+    cursor: pointer;
+    margin: 0 1vmin 0;
+}
+
+.nav-home{
+    color: rgb(205,201,66); 
+}
+
+.nav-about-us{
+    padding: 8px 15px;
+    border: 1px solid blue;
+    border-radius: 20px;
+    color: blue;
+    min-width: 10px;
+}
+
+.nav-about-us:hover{
+    border: 1px solid red;
+}
+
+/* Header */
+header{
+    width: 100%;
+    height: 100vh;
+    margin-top: 59.837px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url(../images/homeimgs/index-img.png);
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-container{
+    width: 50%;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.header-container h1{
+    font-size: 7vmin;
+}
+
+.header-container h2{
+    font-size: 3vmin;
+    padding: 10px 0px 20px;
+    line-height: 2;
+}
+
+.header-container a.intro-button{
+    cursor: pointer;
+    padding: 8px 15px;
+    background: red;
+    border-radius: 30px;
+    color: whitesmoke;
+    transition: transform 0.3s ease;
+}
+
+.header-container a.intro-button:hover{
+    font-size: large;
+}
+
+/* Preview of Food (TEXT) */
+.preview-txt-section{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;  
+    padding: 0;
+}
+
+.preview-txt{
+    font-size: 4vmax;
+    font-weight: bold;
+    margin: 60px 15% 0;  
+    padding: 0; 
+}
+
+/* Preview of Food */
+.preview-section{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin-top: 60px;
+}
+
+.preview-1, .preview-2, .preview-3{
+    display: flex;
+    flex-direction: row;
+    margin: 0px 170px 70px;
+}
+
+.preview-1-txt-container,.preview-2-txt-container,.preview-3-txt-container{
+    width: 400px;
+}
+
+.preview-1-title,.preview-2-title,.preview-3-title{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3vmin;
+    letter-spacing: 0.2rem;
+    margin-bottom: 20px;
+}
+
+.preview-1-desc,.preview-2-desc,.preview-3-desc{
+    font-weight: bolder;
+    font-size: 3.5vmin;
+    margin-bottom: 20px;
+    padding-right: 30px;
+}
+
+.preview-1-title{
+    color: blue;
+}
+
+.preview-2-title{
+    color: rgb(205,201,66);
+}
+
+.preview-3-title{
+    color: red;
+}
+
+.preview-1-img-container,.preview-2-img-container,.preview-3-img-container{
+    align-self:center;
+}
+
+.sisig, .lechon, .curacha{
+    height:auto;
+    width:100%;
+    min-width: 70px;
+    align-self: center;
+}
+
+/* Map: Luzon, Visayas, Mindanao (TEXT) */
+.map-txt-section{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;  
+    padding: 0;
+}
+
+.map-txt-1{
+    font-size: 4vmax;
+    font-weight: bold;
+    margin: 10px 15% 0;  
+    padding: 0;
+}
+
+.map-txt-2{
+    font-size: 3vmax;
+    font-weight: bold;
+    margin: 20px 15% 0;  
+    padding: 0;
+}
+
+/* Map: Luzon, Visayas, Mindanao */
+.map-section{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 100%;
+    margin: 100px 0 0;
+}
+
+.p-column{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    gap: 30px;
+}
+
+
+.p-img-container1, .p-img-container2, .p-img-container3 {
+    width: 70%;
+}
+
+.p-img-container1{
+    background-color: rgb(88, 88, 255);
+}
+
+.p-img-container2{
+    background-color: yellow;
+}
+
+.p-img-container3{
+    background-color: rgb(255, 91, 91);
+}
+
+.p-outline-img.top{
+    background-image: url('../images/homeimgs/luzon-outline.png');
+    transition: background-image 0.3s;
+}
+
+.p-outline-img.top, .p-outline-img.middle, .p-outline-img.bottom {
+    padding-top: 450px;
+    background-image: url('../images/homeimgs/outline.png');
+    background-repeat: no-repeat;
+    background-size: 325px;
+    background-color: white;
+    transition: 0.3s;
+    border-radius: 80%;  
+}
+
+
+.p-img-container1:hover .p-outline-img.top {
+    background-image: url('../images/homeimgs/Luzon.png'); 
+    cursor:pointer;
+}
+
+.p-img-container2:hover .p-outline-img.middle {
+    background-image: url('../images/homeimgs/Visayas.png');
+    cursor:pointer;
+}
+
+.p-img-container3:hover .p-outline-img.bottom {
+    background-image: url('../images/homeimgs/Mindanao.png');
+    cursor:pointer;
+}
+
+/* Fun facts*/
+.fun-fact-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin: 100px 30px 0px;
+}
+
+.fun-fact-img-container{
+    width: 40%;
+    min-width: 300px;
+}
+
+.fun-fact-txt-container{
+    padding-left: 20px;
+    padding-right: 50px;
+    text-align: center;
+    align-self: center;
+    width: 40%;
+    min-width: 150px;
+}
+
+.banana-ketchup{
+    height: 100%;
+    width: 100%;
+}
+
+.fun-fact-txt-1{
+    color:blue;
+    font-size: 2.5vmin;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase; 
+    margin-bottom: 20px;
+}
+
+.fun-fact-txt-2{
+    font-size: 4vmin;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    line-height: 0.75;
+}
+
+.banana{
+    color: rgb(205,201,66);
+}
+
+.ketchup{
+    color:red;
+}
+
+.fun-fact-txt-3{
+    font-size: 2.5vmin;
+    padding: 20px 0px 0px;
+}
+
+/* About us*/
+#about-us-section{
+    background-color: rgb(42,39,39);
+    height: 100%;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.about-us-container{
+    color: rgb(192, 191, 191);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.about-us-container .about-us-txt-1, .about-us-container .about-us-txt-2,
+.about-us-container .about-us-txt-3, .about-us-container .about-us-txt-5,
+.about-us-container .about-us-txt-6{
+    flex-direction: column;
+}
+
+.about-us-txt-1{
+    color:blue;
+    font-weight: bold;
+    font-size: 4vmin;
+    margin-top: 15px;
+}
+
+.about-us-txt-2{
+    padding: 10px 10% 15px;
+    line-height: 2;
+    font-size: 2.5vmin;
+}
+
+.about-us-txt-3{
+    padding: 0px 0px 25px;
+    color: yellow;
+    font-weight: bold;
+    font-size: 3.5vmin;
+}
+
+.about-us-container .about-us-txt-4 ul{ 
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    
+}
+
+.about-us-txt-4{
+    align-self: center;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 1.5vmin;
+}
+
+.about-us-txt-5{
+    padding: 25px 0px 25px;
+    color: red;
+    font-weight: bold;
+    font-size: 3.5vmin;
+}
+
+.about-us-txt-6{
+    padding: 10px 10% 15px;
+    line-height: 2;
+    font-size: 2.5vmin;
+}
+
+/* Applies to the footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px 30px;
+}
+
+.logo-footer{
+    width: 10vmin;
+    height: 10vmin;
+    align-self: center;
+}
+
+.title-footer{
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 3vmin;
+    padding: 0;
+}
+
+.title-1-footer{
+    color: blue;
+}
+
+.title-2-footer{
+    color: rgb(205,201,66); 
+}
+
+.title-3-footer{
+    color: red;
+}
+
+
+
+.credits{
+    font-size: x-small;
+    align-self: center;
+    padding-top: 20px;
+}
+
+
+
+
