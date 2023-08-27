@@ -136,10 +136,86 @@ header{
     border-radius: 30px;
     color: whitesmoke;
     transition: transform 0.3s ease;
+    font-size: 2vmin;
+}
+
+header a{
+    text-align: center;
+    color: rgb(162, 161, 161);
+    font-size: 2vmin;
+}
+
+header .header-ref{
+    margin-top: 20%;
 }
 
 .header-container a.intro-button:hover{
     font-size: large;
+}
+
+/* Upcoming Events*/
+
+#latest-events{
+    margin-top: 80px;
+}
+
+#latest-events a{
+    color:rgb(100, 183, 186);
+}
+
+.event-container{ 
+    justify-content:center;
+    height: 100%;
+    width:100%;
+    padding: 0;
+    margin: 0;
+}
+
+.event-columns{
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    align-self: center;
+}
+
+.event-columns div{
+    flex: 1;
+    flex-wrap: wrap; 
+}
+
+#latest-events .event-title{
+    text-align: center;
+    font-size: 4.5vmin;
+    margin-bottom: 80px;
+}
+
+.event-columns div img{
+    width:100%;
+    min-width: 70px;
+}
+
+#latest-events .header-ref{
+    text-align: center;
+}
+#latest-events .header-ref a{
+    color: rgb(162, 161, 161);
+    font-size: 2vmin;
+}
+
+
+.event-1-txt-container h3{
+    color: blue;
+}
+
+.event-2-txt-container h3{
+    color: rgb(205,201,66); 
+}
+
+.event-3-txt-container h3, #latest-events a:hover{
+    color:red;
 }
 
 /* Preview of Food (TEXT) */
@@ -477,8 +553,6 @@ footer{
     color: red;
 }
 
-
-
 .credits{
     font-size: x-small;
     align-self: center;
@@ -487,4 +561,30 @@ footer{
 
 
 
+@media only screen and (max-width: 600px) {
+   
+    /* Upcoming events */
 
+    .event-columns {
+        flex-direction: column;
+    }
+
+    .event-columns .event{
+    
+        padding: 10%;
+    }
+
+    .event-col img {
+        max-width: 90%;
+    }
+
+    header .header-ref{
+        position: absolute;
+        margin-left: 8%;
+        margin-top: 10%;
+    }
+
+    #latest-events .event-title{
+        margin-bottom: 20px;
+    }
+}
