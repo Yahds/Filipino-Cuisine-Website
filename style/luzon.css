@@ -387,8 +387,7 @@ figcaption {
 }
 
 .description {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin: 2rem;
 }
 
 
@@ -471,7 +470,7 @@ footer{
     border-radius: 20px;
     align-content: center;
     padding: 2rem;
-  }
+ }
 
   .references {
     display: none !important;
