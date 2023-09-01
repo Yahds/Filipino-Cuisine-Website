@@ -137,6 +137,7 @@ a{
     align-content: center;
     inset: 0;
     margin: auto;
+    text-align: center;
 }
 
 .Content p {
@@ -177,6 +178,14 @@ a{
     margin-right: 50px;
     background-color: white;
     border-radius: 2rem;
+}
+
+.Desc {
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: white;
+  border-radius: 2rem;
 }
 
 
