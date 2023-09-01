@@ -218,7 +218,7 @@ nav .content .links{
 }
 
 body {
-    background-image: url(../images/mindanaoimgs/min.jpg);
+    background-color: white;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -370,9 +370,10 @@ a {
 }
 
 .desc {
+    text-align: center;
     margin-left: 50px;
     margin-right: 50px;
-    background-color: #cfe2f3;
+    background-color: white;
     border-radius: 2rem;
 }
 
@@ -422,47 +423,112 @@ footer{
     padding-top: 20px;
 }
 
+/* Mobile content */
+@media (max-width: 600px) {
+
+  .wrapper nav {
+    background-color: #d46855;
+  }
+
+  .nav-title-1, .nav-title-2, .nav-title-3 {
+    color: black;
+    font-size: 2rem;
+  }
+
+  .title-1-footer, .title-2-footer, .title-3-footer  {
+    color: #fcf7ef;
+    font-size: 2rem;
+  }
+
+  footer {
+    background-color: black;
+    color: #fcf7ef;
+  }
+
+  .food-list {
+    background-color: #d46855;
+    border-radius: 2rem;
+  }
+
+  .food-pic {
+    border-color: 2px solid black;
+  }
+
+  .desc {
+    background-color: #d46855;
+    border-radius: 20px;
+    align-content: center;
+    padding: 2rem;
+  }
+
+  .media-scroller {
+    --_spacer: var(--size-3);
+    display: grid;
+    gap: var(--_spacer);
+    grid-auto-flow: column;
+    grid-auto-columns: auto;
+    padding: 0 var(--_spacer) var(--_spacer);
+    overflow-x: scroll; /* Use scroll for mobile */
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: x mandatory; /* Enable horizontal scroll snap */
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+  }
+
+  .Content{
+    display: grid;
+      grid-template-rows: min-content;
+      gap: var(--_spacer);
+      padding: var(1px);
+      background: var(--surface-2);
+      border-radius: var(--radius-2);
+      box-shadow: var(--shadow-2);
+      font-size: 10px;
+  }
+
+  .Content> img {
+      inline-size: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+  }
+
+  .snaps-inline {
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: var(--_spacer, 1rem);
+    scroll-snap-align: start;
+  }
+}
+
 /* For a mobile screens */
 @media (max-width: 600px) {
     /* Navigation Bar */
-
-    .wrapper nav {
-        background-color: #77D7FD;
-    }
-
-    .nav-title-1, .nav-title-2, .nav-title-3 {
-        color: black;
-        font-size: 2rem;
-      }
-
     .nav-links{
-        text-transform: uppercase;
-        padding: 0;
-        display: flex;
-        align-items: center;
-        font-size: 1.9vmin;
-        justify-content: end;
-        width: 100%;
-    }
+      text-transform: uppercase;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      font-size: 1.9vmin;
+      justify-content: end;
+      width: 100%;
+  }
 
-    .nav-links li{
-        cursor: pointer;
-        margin: 0 1vmin 0;
-    }
+  .nav-links li{
+      cursor: pointer;
+      margin: 0 1vmin 0;
+  }
 
-    .nav-home{
-        color: rgb(205,201,66); 
-    }
+  .nav-home{
+      color: rgb(205,201,66); 
+  }
 
-    .nav-about-us{
-        padding: 8px 15px;
-        border: 1px solid blue;
-        border-radius: 20px;
-        color: blue;
-        min-width: 10px;
-    }
+  .nav-about-us{
+      padding: 8px 15px;
+      border: 1px solid blue;
+      border-radius: 20px;
+      color: blue;
+      min-width: 10px;
+  }
 
-    .nav-about-us:hover{
-        border: 1px solid red;
-    }
+  .nav-about-us:hover{
+      border: 1px solid red;
+  }
 }
