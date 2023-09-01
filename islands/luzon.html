@@ -10,13 +10,12 @@
 </head>
 <body>
     <!-- Navigation-bar -->
-    <header class="wrapper">
-        <nav>
-          <input type="checkbox" id="show-search">
-          <input type="checkbox" id="show-menu">
-          <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
-    
-        <div class="content">
+    <nav class="navbar">
+        <input type="checkbox" id="show-search">
+        <input type="checkbox" id="show-menu">
+        <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+
+        <div class = "nav-content">
             <div class = "nav-logo">
                 <img class = "nav-logo-img" src = "../images/homeimgs/LP.png" alt = "logo">
                 <ul class = "nav-title">
@@ -25,19 +24,21 @@
                     <li class = "nav-title-3">Pinoy</li>
                 </ul>
             </div>
-            <ul class="links">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="./visayas.html">Visayas</a></li>
-              <li><a href="./mindanao.html">Mindanao</a></li>
+            <ul class = "nav-links">
+                <li><a href = "../index.html" class = "nav-home">Home</a></li>
+                <li><a href = "../islands/luzon.html">Luzon</a></li>
+                <li><a href = "../islands/visayas.html">Visayas</a></li>
+                <li><a href = "../islands/mindanao.html">Mindanao</a></li>
+                <li class = "nav-li-about-us"><a href="#about-us-section" class = "nav-about-us">About us</a></li>
             </ul>
-          </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
     <br>
     <br>
     <br>
     <br>
     <br>
+    <!-- Description -->
     <div class="description">
         <h1>Luzon Cuisine</h1>
         <p>
@@ -50,10 +51,12 @@
         textures, and traditions.
         </p>
     </div>
+
+    <!-- Food -->
     <div class="media-scroller snaps-inline">
         <div class="content">
             
-            <article class="food-item">
+            <article class="food-item-1">
                 <h2>Sisig</h2>
                 <figure class="food-fig">
                     
@@ -68,7 +71,7 @@
         </div>
     
         <div class="content">
-            <article class="food-item">
+            <article class="food-item-2">
                 <h2>Kapampangan Kare kare</h2>
                 <figure class="food-fig">
                     <img src="../images/luzonfoodimgs/karekare.jpg" alt="Karekare">
@@ -82,7 +85,7 @@
         </div>
     
         <div class="content">
-            <article class="food-item">
+            <article class="food-item-1">
                 <h2>Bulalo</h2>
                 <figure class="food-fig">
                     <img src="../images/luzonfoodimgs/bulalo.jpg" alt="Bulalo">
@@ -95,7 +98,7 @@
         </div>
     
         <div class="content">
-            <article class="food-item">
+            <article class="food-item-2">
                 <h2>Pinakbet Ilocano</h2>
                 <figure class="food-fig">
                     <img src="../images/luzonfoodimgs/pinakbet.jpg" alt="Pinakbet">
@@ -108,7 +111,7 @@
         </div>
     
         <div class="content">
-            <article class="food-item">
+            <article class="food-item-1">
                 <h2>Lechon Kawali</h2>
                 <figure class="food-fig">
                     <img src="../images/luzonfoodimgs/lechonkawali.jpg" alt="LechonKawali">
@@ -121,7 +124,7 @@
         </div>
     
         <div class="content">
-            <article class="food-item">
+            <article class="food-item-2">
                 <h2>Pork Igado</h2>
                 <figure class="food-fig">
                     <img src="../images/luzonfoodimgs/igado.jpg" alt="Igado">
@@ -134,7 +137,7 @@
         </div>
     
         <div class="content">
-            <article class="food-item">
+            <article class="food-item-1">
                 <h2>Tupig</h2>
                 <figure class="food-fig">
                     <img src="../images/luzonfoodimgs/tupig.jpg" alt="Tupig">
@@ -147,7 +150,7 @@
         </div>
     
         <div class="content">
-            <article class="food-item">
+            <article class="food-item-2">
                 <h2>Papaitan</h2>
                 <figure class="food-fig">
                     <img src="../images/luzonfoodimgs/papaitan.jpg" alt="Papaitan">
@@ -160,7 +163,7 @@
         </div>
     
         <div class="content">
-            <article class="food-item">
+            <article class="food-item-1">
                 <h2>Crispy Pata</h2>
                 <figure class="food-fig">
                     <img src="../images/luzonfoodimgs/crispypata.jpg" alt="CrispyPata">
@@ -175,7 +178,7 @@
         </div>
     
         <div class="content">
-            <article class="food-item">
+            <article class="food-item-2">
                 <h2>Tibok-tibok</h2>
                 <figure class="food-fig">
                     <img src="../images/luzonfoodimgs/tiboktibok.jpg" alt="TibokTibok">
@@ -188,7 +191,6 @@
         </div>
     </div>
     
-
     <div class="references">
         <h1>References: </h1>
         <p>
@@ -234,6 +236,26 @@
         <p>
             <i>Tupig in frying pan</i>. Yummy Kitchen. (2023, August 16). https://yummykitchentv.com/tupig-in-frying-pan/ 
         </p>
+    </div>
+    
+
+    <!-- About us -->
+    <div id = "about-us-section">
+        <div class = about-us-container>
+            <div class = "about-us-txt-1">About Us</div>
+            <div class = "about-us-txt-2">Welcome to our virtual platform of flavors and culture! We are a team of five computer science students at Saint Louis University who are passionate about using technology to spread knowledge and share our love of food.</div>
+            <div class = "about-us-txt-3">Meet the team</div>
+            <div class = "about-us-txt-4">
+                <ul>
+                    <li>Peterjan Antonio</li>
+                    <li>Jonison Martel Molintas</li>
+                    <li>Haydee Shane Saguid</li>
+                    <li>Lyvette Claire Tumaliuan</li>
+                </ul>
+            </div>
+            <div class = "about-us-txt-5">Our Project</div>
+            <div class = "about-us-txt-6">Our project is a digital journey to show and teach you about the many different types of food from three interesting and attractive islands in the Philippines: Luzon, Visayas, and Mindanao.</div>
+        </div>
     </div>
 
     <!-- Footer -->

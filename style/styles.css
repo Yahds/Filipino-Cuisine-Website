@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 /* FOR DESKTOP */
 
 /* All */
 body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     transition: 0.3s;
     padding: 0%;
     margin: 0%;
@@ -17,8 +18,8 @@ a{
     text-decoration: none;
     cursor: pointer;
     color: black;
-    font-weight: bold;
-    transition: transform 0.3s ease;
+    font-weight: 600;
+    transition: 0.3s ease;
     transition: color 0.3s;
 }
 
@@ -34,6 +35,22 @@ hr {
 }
 
 /* Navigation Bar */
+
+.navbar .menu-icon{
+    cursor: pointer;
+    width: 70px;
+    text-align: center;
+    align-self: center;
+  }
+  
+  .navbar .menu-icon{
+    display: none;
+  }
+  
+  .navbar input[type="checkbox"]{
+    display: none;
+  }
+  
 .navbar{
     position: fixed;
     display: flex;
@@ -43,6 +60,11 @@ hr {
     left:0;
     right:0;
     background-color:whitesmoke;   
+}
+
+.nav-content{
+    display: flex;
+    width: 100%;
 }
 
 .nav-logo{
@@ -740,6 +762,52 @@ footer{
         border: 1px solid red;
     }
 
+    .navbar {
+    justify-self: center;
+    }
+
+    .nav-logo {
+    justify-content: center;
+    width: 100%;
+    }
+
+    /* Navigation Bar Dropdown*/
+    .navbar .menu-icon{
+    display: block;
+    }
+
+    .navbar #show-menu:checked ~ .menu-icon i::before{
+    content: "\f00d";
+    }
+
+    nav .nav-content .nav-links{
+    display: block;
+    position: fixed;
+    background: whitesmoke;
+    height: 100%;
+    width: 100%;
+    top: 80px;
+    left: -100%;
+    margin-left: 0;
+    max-width: 200px;
+    transition: all 0.3s ease;
+    }
+
+    nav #show-menu:checked ~ .nav-content .nav-links{
+    left: 0%;
+    }
+    .nav-content .nav-links li{
+    margin: 15px 20px;
+    }
+
+    .nav-content .nav-links li a,
+    .nav-content .nav-links li label{
+    line-height: 40px;
+    font-size: 15px;
+    display: block;
+    padding: 8px 18px;
+    cursor: pointer;
+}
     /* Header */
     
     header{
@@ -1034,15 +1102,8 @@ footer{
         color: white;
     }
 
-
-    /* About us */
-    .about-us-container{
-        background-color: rgb(136, 255, 199);
-        color: black;
-    }
-
     /* Footer */
-    footer{
+    footer, .about-us-txt-4 li{
         background-color: white;
     }
 }
