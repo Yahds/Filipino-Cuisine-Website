@@ -36,7 +36,13 @@ h2 {
   color: #FE9DBE;
 }
 
-h4, h5 {
+h4 {
+  text-align: center;
+  font-size: 1.2em;
+  color: #FDE48D;
+}
+
+h5 {
   font-size: 1.2em;
   color: #FDE48D;
 }
@@ -402,7 +408,8 @@ footer{
   }
 
   h4{
-    font-size: .5em;
+    text-align: center;
+    font-size: 3vw;
     color: #FDE48D;
   }
 
@@ -504,11 +511,6 @@ footer{
 
 div.content-container h2{
   font-size: 5vw;
-}
-
-
-#intro{
-  font-size: 3vw;
 }
 
 #ref {
