@@ -351,7 +351,7 @@ footer{
       border-radius: 2rem;
     }
   .food-fig {
-      border-color: 2px solid black;
+      border: 2px solid black;
     }
   .media-scroller {
         --_spacer: var(--size-3);
@@ -363,6 +363,10 @@ footer{
         overscroll-behavior-inline: contain;
         padding: 0 var(--_spacer) var(--_spacer);
       }
+
+  :root {
+        --my-variable: 1px;
+  }
   .content {
         background: var(--surface-2);
         border-radius: var(--radius-2);
@@ -371,7 +375,7 @@ footer{
         font-size: 10px;
         gap: var(--_spacer);
         grid-template-rows: min-content;
-        padding: var(1px);
+        padding: var(--my-variable);
       }
   .content> img {
         inline-size: 100%;
