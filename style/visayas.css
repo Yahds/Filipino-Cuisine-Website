@@ -1,18 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 /* All */
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 
-body {
-    min-height: 100vh;
-    overflow-x: hidden;
-    background: linear-gradient(to bottom, #f6d7b0, #f1d1a8, #eccba1, #e6c599, #e1bf92);
+body{
+  font-family: 'Poppins', sans-serif;
+  transition: 0.3s;
+  padding: 0%;
+  margin: 0%;
+  overflow-x: hidden;
 }
 
 ul{
@@ -29,6 +28,17 @@ a {
     font-weight: 600;
     transition: 0.3s ease;
     transition: color 0.3s;
+}
+
+h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #FE9DBE;
+}
+
+h4, h5 {
+  font-size: 1.2em;
+  color: #FDE48D;
 }
 
 /* Navigation Bar */
@@ -52,7 +62,7 @@ a {
     position: fixed;
     display: flex;
     width: 100%;
-    height: 12%;
+    height: 13%;
     top:0;
     left:0;
     right:0;
@@ -133,10 +143,10 @@ section{
     position: relative;
     width: 100%;
     height: 100vh;
-    padding: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #77D7FD;
 }
 
 section::before{
@@ -184,7 +194,8 @@ section img#front{
     z-index: 12;
     position: relative;
     padding: 100px;
-    background: #fff;
+    background: #FE9DBE;
+    box-shadow: 0 0 50px rgba(82, 78, 78, 0.1);
 }
 
 .sec h2{
@@ -196,7 +207,7 @@ section img#front{
 
 .sec p{
     font-size: 1em;
-    color: #000;
+    color: #ffffff;
 }
 
 h4#intro{
@@ -208,7 +219,10 @@ h4#intro{
 .content-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* This will distribute items evenly on each row */
+    justify-content: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
 }
 
 .Content {
@@ -233,10 +247,11 @@ h4#intro{
 }
 
 .food-list {
-    border: 3px solid black;
-    margin-bottom: 5px;
-    padding: 10px;
-    background-color: #f8f8f8;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  padding: 20px;
+  background-color: #77D7FD;
 }
 
 .food-img {
@@ -246,10 +261,10 @@ h4#intro{
 }
 
 .food-pic img {
-    width: 500px;
-    height: 500px;
-    object-fit: cover;
-    display: block;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  display: block;
 }
 
 /* About us*/
@@ -371,7 +386,32 @@ footer{
 
 /* For a mobile screens */
 @media (max-width: 600px) {
-    /* Navigation Bar */
+
+  /* All */
+  body{
+    background-color: rgb(41, 41, 41);
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s;
+    padding: 0%;
+    margin: 0%;
+    overflow-x: hidden;
+  }
+
+  body, p, h2, h4, h5 {
+    word-wrap: break-word;
+  }
+
+  h4{
+    font-size: .5em;
+    color: #FDE48D;
+  }
+
+  h5{
+    font-size: .7em;
+    color: #FDE48D;
+  }
+
+  /* Navigation Bar */
   .nav-links{
     text-transform: uppercase;
     padding: 0;
@@ -450,4 +490,98 @@ footer{
   cursor: pointer;
   }
 
+#text {
+  position: absolute;
+  color: #fff;
+  white-space: nowrap;
+  font-size: 8vw;
+  z-index: 9;
+}
+
+#title{
+  font-size: 4vw;
+}
+
+div.content-container h2{
+  font-size: 5vw;
+}
+
+
+#intro{
+  font-size: 3vw;
+}
+
+#ref {
+  font-size: 1.5vw;
+}
+
+/* Your section styles */
+section{
+  height: 40vh;
+}
+
+.sec {
+  padding: 20px;
+  background: #FE9DBE;
+  box-shadow: 0 0 20px rgba(82, 78, 78, 0.1);
+}
+
+.sec h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.sec p {
+  font-size: 1em;
+  color: #ffffff;
+}
+
+h4#intro {
+  text-align: center;
+}
+
+/* Your content container styles */
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
+
+.Content {
+  flex: 0 0 calc(100% - 20px);
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.Content p {
+  padding: 5px;
+}
+
+.paragraph-spacing {
+  margin-bottom: 10px;
+}
+
+/* Your food list styles */
+.food-list {
+  border: 2px solid #000000;
+  border-radius: 10px;
+  margin-bottom: 10px; /* Adjusted margin for mobile */
+  background-color: #77D7FD;
+}
+
+.food-img {
+  width: 100%;
+  height: auto; /* Adjusted height for mobile */
+  overflow: hidden;
+}
+
+.food-pic img {
+  width: 100%;
+  height: auto; /* Adjusted height for mobile */
+  object-fit: cover;
+  display: block;
+}
 }
