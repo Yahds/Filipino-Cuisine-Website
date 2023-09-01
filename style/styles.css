@@ -1,4 +1,6 @@
 
+/* FOR DESKTOP */
+
 /* All */
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -130,7 +132,7 @@ header{
 
 .header-container h2{
     font-size: 3vmin;
-    padding: 10px 0px 20px;
+    padding: 10px 20px 20px;
     line-height: 2;
 }
 
@@ -696,10 +698,16 @@ footer{
 }
 
 
-
+/* FOR MOBILE */
 @media only screen and (max-width: 600px) {
     /* All */
-    
+    .main-container{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(41, 41, 41);
+    }
     /* Navigation Bar */
     .nav-links{
         text-transform: uppercase;
@@ -744,8 +752,24 @@ footer{
         display: none;
     }
 
+    .header-container{
+        width: 100%;
+        background: linear-gradient(rgba(255, 255, 255, 0.638), rgba(255, 255, 255, 0.633));
+    }
+
+    .header-container h1{ 
+        font-size: 5vmin;
+        color: rgb(0, 0, 0);
+        margin-top: 20%;
+    }
+
+    .header-container h2{ 
+        font-size: 3vmin;
+        color: rgb(0, 0, 0);
+    }
+
     header a{
-        color: rgb(254, 254, 254);
+        color: rgb(0, 0, 0);
     }
 
     header .header-ref-mobile{
@@ -756,8 +780,29 @@ footer{
         text-transform: uppercase;
     }
 
+    .header-container a.intro-button{
+        background-color: rgb(136, 255, 199);
+        color: black;
+        font-size: large;
+    }
+    
+    .header-container a.intro-button:hover{
+        background-color: red;
+    }
+
+
     /* #77D7FD #FDE48D #FE9DBE  */
     /* Article */
+    #article{
+        margin: 0;
+    }
+
+    .article-title, .event-title, .news-title, .preview-txt-section,
+    .map-txt-section{
+         background-color: rgb(136, 255, 199);
+         padding:5%;
+
+    }
 
     #article .article-container{
         width: 100%;
@@ -770,13 +815,26 @@ footer{
     .article-container p{
         padding: 5%;
     }
+
+    .article-container p:nth-child(1),  .article-container p:nth-child(5),
+    .article-container p:nth-child(7){
+        margin-right: 20%;
+        
+    }
+
+    .article-container p:nth-child(2),  .article-container p:nth-child(6),
+    .article-container p:nth-child(8){
+        margin-left: 20%;
+    }
+
     .article-container p:nth-child(1), .article-container p:nth-child(6){
-        background-color: #77D7FD; 
+        background-color: #99eafed4; 
         border-radius: 20px;
+        
     }
 
     .article-container p:nth-child(2), .article-container p:nth-child(7){
-        background-color: #FDE48D;
+        background-color: #fbe9a8dc;
         border-radius: 20px;
     }
 
@@ -790,6 +848,11 @@ footer{
     }
     
     /* Upcoming events */
+    #upcoming-events{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
     #upcoming-events a{
         color: rgb(214, 38, 82);
     }
@@ -804,7 +867,7 @@ footer{
     }
 
     .event-columns .event{
-        padding: 10%;
+        padding: 10% 0 10%;
     }
 
     .event-columns .event h3{
@@ -812,12 +875,20 @@ footer{
         text-transform: capitalize;
     }
     
-    .event img{
-        border-radius: 20px;
+
+    .event-1-img-container{
+        margin: 20px;
     }
+
+    .event-columns div img{
+        width:70%;
+        border-radius: 50%;
+        margin: 0 auto;
+        display: block;
+    }
+
     .event-1-txt-container{
         background-color: #77D7FD;
-        border-radius: 20px;
         padding: 5%;
     }
 
@@ -833,9 +904,14 @@ footer{
         padding: 5%;
     }
 
-
    
     /* Latest news */
+
+    #latest{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
 
     #latest-news a{
         color: rgb(214, 38, 82);
@@ -850,6 +926,11 @@ footer{
         margin: 0;
     }
 
+    .news{
+        padding: 0;
+        margin: 0;
+    }
+
     .news-columns .news{
         padding: 10%;
     }
@@ -858,10 +939,14 @@ footer{
         color: black;
         text-transform: capitalize;
     }
-    
-    .news img{
-        border-radius: 20px;
+
+    .news-columns div img{
+        width:90%;
+        border-radius: 50%;
+        margin: 0 auto;
+        display: block;
     }
+
     .news-1-txt-container{
         background-color: #77D7FD;
         border-radius: 20px;
@@ -880,7 +965,40 @@ footer{
         padding: 5%;
     }
 
+    /* Preview-of-Food */
+    .preview-section a, .about-us-txt-4 li{
+        color: black;
+    }
+    .preview-1-desc, .preview-2-desc, .preview-3-desc{
+        color: white;
+    }
 
+    .preview-1-title, .fun-fact-txt-1{
+        color: #77D7FD;
+    }
+
+    .preview-2-title, .banana{
+        color: #FDE48D;
+    }
+
+    .preview-3-title, .ketchup{
+        color: #FE9DBE;
+    }
+
+    .preview-1-img-container{
+        padding: 3%;
+        background-color: #77D7FD;
+    }
+
+    .preview-2-img-container{
+        padding: 3%;
+        background-color: #FDE48D;
+    }
+
+    .preview-3-img-container{
+        padding: 3%;
+        background-color: #FE9DBE;
+    }
     /* Map:Luzon-Visayas-Mindanao */
 
     .map-section{
@@ -894,5 +1012,37 @@ footer{
         width: 100%;
     }
 
+    .p-img-container1{
+        background-color: #77D7FD;
+    }
     
+    .p-img-container2{
+        background-color: #FDE48D;
+    }
+    
+    .p-img-container3{
+        background-color: #FE9DBE;
+    }
+
+    /* Fun facts */
+    .banana-ketchup{
+        background-color: rgb(136, 255, 199);
+        padding: 3%;
+    }
+
+    .fun-fact-txt-container{
+        color: white;
+    }
+
+
+    /* About us */
+    .about-us-container{
+        background-color: rgb(136, 255, 199);
+        color: black;
+    }
+
+    /* Footer */
+    footer{
+        background-color: white;
+    }
 }
