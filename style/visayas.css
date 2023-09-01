@@ -37,9 +37,10 @@ h4{
   text-align: center;
 }
 
-h5 {
+.photo-owner {
     color: #4ca095;
     font-size: 1.2em;
+    font-weight: bold;
   }
 
 /* Navigation Bar */
@@ -401,7 +402,7 @@ footer{
     word-wrap: break-word;
   }
 
-  #photo-owner{
+  .Content .food-list .photo-owner{
     color: #FDE48D;
     font-size: .7em;
     word-wrap: break-word;
@@ -513,7 +514,7 @@ footer{
     padding: 20px;
   }
 
-  .sec #food-title {
+  .sec .food-title {
     color: #000;
     font-size: 5vw;
     margin-bottom: 10px;
