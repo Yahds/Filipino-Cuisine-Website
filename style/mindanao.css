@@ -1,318 +1,120 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
+
+/* All */
+body{
   font-family: 'Poppins', sans-serif;
-}
-
-.wrapper{
-  background: whitesmoke;
-  position: fixed;
-  width: 100%;
-}
-
-.wrapper nav{
-  position: relative;
-  display: flex;
-  max-width: calc(100% - 200px);
-  margin: 10px;
-  height: 70px;
-  align-items: center;
-  justify-content: space-between;
-}
-
-nav .content{
-  display: flex;
-  align-items: center;
-}
-
-nav .content .links{
-    position: fixed;
-    display: flex;
-    width: 100%;
-    height: 12%;
-    top:0;
-    left:0;
-    right:0;
-}
-
-.content .logo a{
-  color: #fff;
-  font-size: 30px;
-  font-weight: 600;
-}
-
-.content .links li{
-  list-style: none;
-  line-height: 70px;
-}
-
-.content .links li a,
-.content .links li label{
-  font-size: 18px;
-  font-weight: 500;
-  padding: 9px 17px;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-}
-
-.content .links li label{
-  display: none;
-}
-
-.content .links li a:hover,
-.content .links li label:hover{
-  color: red;
-}
-
-.wrapper .menu-icon{
-  font-size: 18px;
-  cursor: pointer;
-  line-height: 70px;
-  width: 70px;
-  text-align: center;
-}
-
-.wrapper .menu-icon{
-  display: none;
-}
-
-.wrapper #show-search:checked ~ .search-icon i::before{
-  content: "\f00d";
-}
-
-.wrapper .search-box{
-  position: absolute;
-  height: 100%;
-  max-width: calc(100% - 50px);
-  width: 100%;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s ease;
-}
-
-.wrapper #show-search:checked ~ .search-box{
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.wrapper input[type="checkbox"]{
-  display: none;
-}
-
-/* Dropdown Menu code start */
-.content .links ul{
-  position: absolute;
-  background: whitesmoke;
-  top: 80px;
-  z-index: -1;
-  opacity: 0;
-  visibility: hidden;
-}
-
-/* Responsive code start */
-@media screen and (max-width: 1250px){
-  .wrapper nav{
-    max-width: 100%;
-    padding: 0 20px;
-    background-color: whitesmoke;
-    margin: 0;
-  }
-
-  nav .content .links{
-    margin-left: 30px;
-  }
-
-  .content .links li a{
-    padding: 8px 13px;
-  }
-
-  .wrapper .search-box{
-    max-width: calc(100% - 100px);
-  }
-
-  .wrapper .search-box input{
-    padding: 0 100px 0 15px;
-  }
-}
-
-@media screen and (max-width: 900px){
-  .wrapper .menu-icon{
-    display: block;
-  }
-
-  .wrapper #show-menu:checked ~ .menu-icon i::before{
-    content: "\f00d";
-  }
-
-  nav .content .links{
-    display: block;
-    position: fixed;
-    background: #77D7FD;
-    height: 100%;
-    width: 100%;
-    top: 70px;
-    left: -100%;
-    margin-left: 0;
-    max-width: 350px;
-    overflow-y: auto;
-    padding-bottom: 100px;
-    transition: all 0.3s ease;
-  }
-
-  nav #show-menu:checked ~ .content .links{
-    left: 0%;
-  }
-  .content .links li{
-    margin: 15px 20px;
-  }
-
-  .content .links li a,
-  .content .links li label{
-    line-height: 40px;
-    font-size: 20px;
-    display: block;
-    padding: 8px 18px;
-    cursor: pointer;
-  }
-  
-  .content .links li a.desktop-link{
-    display: none;
-  }
-
-  /* dropdown responsive code start */
-  .content .links ul,
-  .content .links ul ul{
-    position: static;
-    opacity: 1;
-    visibility: visible;
-    background: none;
-    max-height: 0px;
-    overflow: hidden;
-  }
-
-  .content .links #show-features:checked ~ ul,
-  .content .links #show-services:checked ~ ul,
-  .content .links #show-items:checked ~ ul{
-    max-height: 100vh;
-  }
-
-  .content .links ul li{
-    margin: 7px 20px;
-  }
-  
-  .content .links ul li a{
-    font-size: 18px;
-    line-height: 30px;
-    border-radius: 5px!important;
-  }
-}
-
-/* Applies to all parts */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: white;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  transition: 0.3s;
+  padding: 0%;
+  margin: 0%;
 }
 
 ul{
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    transition: color 0.3s;
+  list-style: none;
 }
 
-a {
-    text-decoration: none;
-    cursor: pointer;
-    color: black;
-    font-weight: bold;
+a{
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  font-weight: 600;
+  transition: 0.3s ease;
+  transition: color 0.3s;
 }
 
 /* Navigation Bar */
+
+.navbar .menu-icon{
+  cursor: pointer;
+  width: 70px;
+  text-align: center;
+  align-self: center;
+}
+
+.navbar .menu-icon{
+  display: none;
+}
+
+.navbar input[type="checkbox"]{
+  display: none;
+}
+
 .navbar{
-    position: fixed;
-    display: flex;
-    width: 100%;
-    height: 12%;
-    top:0;
-    left:0;
-    right:0;
-    background-color:whitesmoke;   
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 12%;
+  top:0;
+  left:0;
+  right:0;
+  background-color:whitesmoke;   
+}
+
+.nav-content{
+  display: flex;
+  width: 100%;
 }
 
 .nav-logo{
-    display: flex;
+  display: flex;
 }
 
 .nav-logo-img{
-    width: 10vmin;
-    height: 10vmin;
-    align-self: center;
+  width: 10vmin;
+  height: 10vmin;
+  align-self: center;
 }
 
 .nav-title{
-    margin: 0;
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    font-size: 3vmin;
-    padding: 0;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 3vmin;
+  padding: 0;
 }
 
 .nav-title-1{
-    color: blue;
+  color: blue;
 }
 
 .nav-title-2{
-    color: rgb(205,201,66); 
+  color: rgb(205,201,66); 
 }
 
 .nav-title-3, .nav-links a:hover{
-    color: red;
+  color: red;
 }
 
 .nav-links{
-    padding: 0;
-    display: flex;
-    align-items: center;
-    font-size: 1.9vmin;
-    justify-content: end;
-    width: 100%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  font-size: 1.9vmin;
+  justify-content: end;
+  width: 100%;
 }
 
 .nav-links li{
-    cursor: pointer;
-    margin: 0 1vmin 0;
+  cursor: pointer;
+  margin: 0 1vmin 0;
 }
 
 .nav-home{
-    color: rgb(205,201,66); 
+  color: rgb(205,201,66); 
 }
 
 .nav-about-us{
-    padding: 8px 15px;
-    border: 1px solid blue;
-    border-radius: 20px;
-    color: blue;
-    min-width: 10px;
+  padding: 8px 15px;
+  border: 1px solid blue;
+  border-radius: 20px;
+  color: blue;
+  min-width: 10px;
 }
 
 .nav-about-us:hover{
-    border: 1px solid red;
+  border: 1px solid red;
 }
-
 
 /* Mindanao Content  */
 .intro {
@@ -345,7 +147,7 @@ a {
     margin-bottom: 20px;
 }
 
-.food-list {
+.food-list-1, .food-list-2 {
     border: 3px solid black;
     margin-bottom: 5px;
     padding: 10px;
@@ -378,75 +180,216 @@ a {
 }
 
 
-/* Applies to the footer */
+/* About us*/
+#about-us-section{
+  background-color: rgb(42,39,39);
+  height: 100%;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.about-us-container{
+  color: rgb(192, 191, 191);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.about-us-container .about-us-txt-1, .about-us-container .about-us-txt-2,
+.about-us-container .about-us-txt-3, .about-us-container .about-us-txt-5,
+.about-us-container .about-us-txt-6{
+  flex-direction: column;
+}
+
+.about-us-txt-1{
+  color:blue;
+  font-weight: bold;
+  font-size: 4vmin;
+  margin-top: 15px;
+}
+
+.about-us-txt-2{
+  padding: 10px 10% 15px;
+  line-height: 2;
+  font-size: 2.5vmin;
+}
+
+.about-us-txt-3{
+  padding: 0px 0px 25px;
+  color: yellow;
+  font-weight: bold;
+  font-size: 3.5vmin;
+}
+
+.about-us-container .about-us-txt-4 ul{ 
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+  
+}
+
+.about-us-txt-4{
+  align-self: center;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 1.5vmin;
+}
+
+.about-us-txt-5{
+  padding: 25px 0px 25px;
+  color: red;
+  font-weight: bold;
+  font-size: 3.5vmin;
+}
+
+.about-us-txt-6{
+  padding: 10px 10% 15px;
+  line-height: 2;
+  font-size: 2.5vmin;
+}
+
+/* Footer */
 footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-    padding: 30px 0px 30px;
-    background-color: whitesmoke;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0px 30px;
 }
 
 .logo-footer{
-    width: 10vmin;
-    height: 10vmin;
-    align-self: center;
+  width: 10vmin;
+  height: 10vmin;
+  align-self: center;
 }
 
 .title-footer{
-    margin: 0;
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    font-size: 3vmin;
-    padding: 0;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 3vmin;
+  padding: 0;
 }
 
 .title-1-footer{
-    color: blue;
+  color: blue;
 }
 
 .title-2-footer{
-    color: rgb(205,201,66); 
+  color: rgb(205,201,66); 
 }
 
 .title-3-footer{
-    color: red;
+  color: red;
 }
 
 .credits{
-    font-size: x-small;
-    align-self: center;
-    padding-top: 20px;
+  font-size: x-small;
+  align-self: center;
+  padding-top: 20px;
 }
 
-/* Mobile content */
+
+/* For Mobile screens */
 @media (max-width: 600px) {
 
-  .wrapper nav {
-    background-color: #d46855;
+  /* All */
+  body{
+    background-color: rgb(41, 41, 41);
+  }
+  /* Navigation Bar */
+  .nav-links{
+    text-transform: uppercase;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.9vmin;
+    justify-content: end;
+    width: 100%;
   }
 
-  .nav-title-1, .nav-title-2, .nav-title-3 {
-    color: black;
-    font-size: 2rem;
+  .nav-links li{
+    cursor: pointer;
+    margin: 0 1vmin 0;
   }
 
-  .title-1-footer, .title-2-footer, .title-3-footer  {
-    color: #fcf7ef;
-    font-size: 2rem;
+  .nav-home{
+    color: rgb(205,201,66); 
   }
 
-  footer {
-    background-color: black;
-    color: #fcf7ef;
+  .nav-about-us{
+    padding: 8px 15px;
+    border: 1px solid blue;
+    border-radius: 20px;
+    color: blue;
+    min-width: 10px;
   }
 
-  .food-list {
-    background-color: #d46855;
+  .nav-about-us:hover{
+    border: 1px solid red;
+  }
+
+  .navbar {
+  justify-self: center;
+  }
+
+  .nav-logo {
+  justify-content: center;
+  width: 100%;
+  }
+
+  /* Navigation Bar Dropdown*/
+  .navbar .menu-icon{
+  display: block;
+  }
+
+  .navbar #show-menu:checked ~ .menu-icon i::before{
+  content: "\f00d";
+  }
+
+  nav .nav-content .nav-links{
+  display: block;
+  position: fixed;
+  background: whitesmoke;
+  height: 100%;
+  width: 100%;
+  top: 80px;
+  left: -100%;
+  margin-left: 0;
+  max-width: 200px;
+  transition: all 0.3s ease;
+  }
+
+  nav #show-menu:checked ~ .nav-content .nav-links{
+  left: 0%;
+  }
+  .nav-content .nav-links li{
+  margin: 15px 20px;
+  }
+
+  .nav-content .nav-links li a,
+  .nav-content .nav-links li label{
+  line-height: 40px;
+  font-size: 15px;
+  display: block;
+  padding: 8px 18px;
+  cursor: pointer;
+  }
+  
+  /* Content */
+  .food-list-1 {
+    background-color: #77D7FD;
+    border-radius: 2rem;
+  }
+
+  .food-list-2 {
+    background-color: #FDE48D;
     border-radius: 2rem;
   }
 
@@ -455,7 +398,7 @@ footer{
   }
 
   .desc {
-    background-color: #d46855;
+    background-color: #FE9DBE;
     border-radius: 20px;
     align-content: center;
     padding: 2rem;
@@ -477,40 +420,5 @@ footer{
   .content-wrapper {
     overflow-x: auto;
     white-space: nowrap; /* Prevent line breaks in Content */
-  }
-}
-
-/* For a mobile screens */
-@media (max-width: 600px) {
-    /* Navigation Bar */
-    .nav-links{
-      text-transform: uppercase;
-      padding: 0;
-      display: flex;
-      align-items: center;
-      font-size: 1.9vmin;
-      justify-content: end;
-      width: 100%;
-  }
-
-  .nav-links li{
-      cursor: pointer;
-      margin: 0 1vmin 0;
-  }
-
-  .nav-home{
-      color: rgb(205,201,66); 
-  }
-
-  .nav-about-us{
-      padding: 8px 15px;
-      border: 1px solid blue;
-      border-radius: 20px;
-      color: blue;
-      min-width: 10px;
-  }
-
-  .nav-about-us:hover{
-      border: 1px solid red;
   }
 }

@@ -317,10 +317,10 @@ footer{
 /* For a mobile screens */
 @media (max-width: 600px) {
 
-    /* All */
-    body{
-      background-color: rgb(41, 41, 41);
-    }
+  /* All */
+  body{
+    background-color: rgb(41, 41, 41);
+  }
   /* Navigation Bar */
   .nav-links{
     text-transform: uppercase;
@@ -468,9 +468,8 @@ footer{
   }
 
   /* Footer */
-  footer, .about-us-txt-4 li{
+  footer {
     background-color: whitesmoke;
-    color: black;
   }
 }
 

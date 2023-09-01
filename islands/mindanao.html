@@ -10,13 +10,12 @@
 </head>
 <body>
     <!-- Navigation-bar -->
-    <header class="wrapper">
-        <nav>
-          <input type="checkbox" id="show-search">
-          <input type="checkbox" id="show-menu">
-          <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
-    
-        <div class="content">
+    <nav class="navbar">
+        <input type="checkbox" id="show-search">
+        <input type="checkbox" id="show-menu">
+        <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+
+        <div class = "nav-content">
             <div class = "nav-logo">
                 <img class = "nav-logo-img" src = "../images/homeimgs/LP.png" alt = "logo">
                 <ul class = "nav-title">
@@ -25,14 +24,15 @@
                     <li class = "nav-title-3">Pinoy</li>
                 </ul>
             </div>
-            <ul class="links">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="./luzon.html">Luzon</a></li>
-              <li><a href="./visayas.html">Visayas</a></li>
+            <ul class = "nav-links">
+                <li><a href = "../index.html" class = "nav-home">Home</a></li>
+                <li><a href = "../islands/luzon.html">Luzon</a></li>
+                <li><a href = "../islands/visayas.html">Visayas</a></li>
+                <li><a href = "../islands/mindanao.html">Mindanao</a></li>
+                <li class = "nav-li-about-us"><a href="#about-us-section" class = "nav-about-us">About us</a></li>
             </ul>
-          </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
     <br>
     <br>
     <br>
@@ -61,7 +61,7 @@
     <div class="media-scroller snaps-inline">
         <div class="Content">
 
-            <article class="food-list">
+            <article class="food-list-1">
                 <h2>Curacha</h2>
                 <figure class="food-pic">
 
@@ -75,7 +75,7 @@
         </div>
 
         <div class="Content">
-            <article class="food-list">
+            <article class="food-list-2">
                 <h2>Sinuglaw</h2>
                 <figure class="food-pic">
 
@@ -89,7 +89,7 @@
         </div>
 
         <div class="Content">
-            <article class="food-list">
+            <article class="food-list-1">
                 <h2>Chicken Piyanggang</h2>
                 <figure class="food-pic">
 
@@ -103,7 +103,7 @@
         </div>
 
         <div class="Content">
-            <article class="food-list">
+            <article class="food-list-2">
                 <h2>Tiyula Itum</h2>
                 <figure class="food-pic">
 
@@ -117,7 +117,7 @@
         </div>
 
         <div class="Content">
-            <article class="food-list">
+            <article class="food-list-1">
                 <h2>Tuna</h2>
                 <figure class="food-pic">
 
@@ -132,7 +132,7 @@
     </div>
 
     <div class="Content">
-        <article class="food-list">
+        <article class="food-list-2">
             <h2>Piyassak</h2>
             <figure class="food-pic">
 
@@ -146,7 +146,7 @@
     </div>
 
     <div class="Content">
-        <article class="food-list">
+        <article class="food-list-1">
             <h2>Tinagtag</h2>
             <figure class="food-pic">
 
@@ -160,7 +160,7 @@
     </div>
 
     <div class="Content">
-        <article class="food-list">
+        <article class="food-list-2">
             <h2>Pastil</h2>
             <figure class="food-pic">
 
@@ -174,7 +174,7 @@
     </div>
 
     <div class="Content">
-        <article class="food-list">
+        <article class="food-list-1">
             <h2>Satti</h2>
             <figure class="food-pic">
 
@@ -188,7 +188,7 @@
     </div>
 
     <div class="Content">
-        <article class="food-list">
+        <article class="food-list-2">
             <h2>Biryani</h2>
             <figure class="food-pic">
 
@@ -202,7 +202,7 @@
     </div>
 
     <div class="Content">
-        <article class="food-list">
+        <article class="food-list-1">
             <h2>Reference/s:</h2>
             <p>https://www.camella.com.ph/mindanaos-best-food-delicacies-to-offer-tourists/</p>
             <p>https://www.nnc.gov.ph/regional-offices/mindanao/region-ix-zamboanga-peninsula/5912-millennials-food-trend-makers</p>
@@ -221,6 +221,25 @@
         <br>
     </div>
 
+    <!-- About us -->
+    <div id = "about-us-section">
+        <div class = about-us-container>
+            <div class = "about-us-txt-1">About Us</div>
+            <div class = "about-us-txt-2">Welcome to our virtual platform of flavors and culture! We are a team of four computer science students at Saint Louis University who are passionate about using technology to spread knowledge and share our love of food.</div>
+            <div class = "about-us-txt-3">Meet the team</div>
+            <div class = "about-us-txt-4">
+                <ul>
+                    <li>Peterjan Antonio</li>
+                    <li>Jonison Martel Molintas</li>
+                    <li>Haydee Shane Saguid</li>
+                    <li>Lyvette Claire Tumaliuan</li>
+                </ul>
+            </div>
+            <div class = "about-us-txt-5">Our Project</div>
+            <div class = "about-us-txt-6">Our project is a digital journey to show and teach you about the many different types of food from three interesting and attractive islands in the Philippines: Luzon, Visayas, and Mindanao.</div>
+        </div>
+    </div>
+    
     <!-- Footer -->
     <footer>
         <div class = "logo-footer-container">

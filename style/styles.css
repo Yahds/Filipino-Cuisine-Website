@@ -1102,8 +1102,13 @@ footer{
         color: white;
     }
 
+    /* About us */
+    .about-us-txt-4 li{
+        color: white;
+    }
+
     /* Footer */
-    footer, .about-us-txt-4 li{
+    footer{
         background-color: white;
     }
 }
