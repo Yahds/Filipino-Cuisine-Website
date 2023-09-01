@@ -203,7 +203,7 @@ header .header-ref-mobile{
     color: red;
 }
 
-#article h1{
+#article .article-title{
     text-align: center;
     font-size: 5vmin;
 }
