@@ -461,28 +461,11 @@ footer{
     padding: 2rem;
   }
 
-  .media-scroller {
-    --_spacer: var(--size-3);
-    display: grid;
-    gap: var(--_spacer);
-    grid-auto-flow: column;
-    grid-auto-columns: auto;
-    padding: 0 var(--_spacer) var(--_spacer);
-    overflow-x: scroll; /* Use scroll for mobile */
-    overscroll-behavior-inline: contain;
-    scroll-snap-type: x mandatory; /* Enable horizontal scroll snap */
-    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
-  }
-
   .Content{
-    display: grid;
-      grid-template-rows: min-content;
-      gap: var(--_spacer);
-      padding: var(1px);
-      background: var(--surface-2);
-      border-radius: var(--radius-2);
-      box-shadow: var(--shadow-2);
-      font-size: 10px;
+    width: auto;
+    max-width: none; /* Remove max-width */
+    display: block; /* Change display to block to stack elements */
+    padding: 1rem;
   }
 
   .Content> img {
@@ -491,10 +474,9 @@ footer{
       object-fit: cover;
   }
 
-  .snaps-inline {
-    scroll-snap-type: inline mandatory;
-    scroll-padding-inline: var(--_spacer, 1rem);
-    scroll-snap-align: start;
+  .content-wrapper {
+    overflow-x: auto;
+    white-space: nowrap; /* Prevent line breaks in Content */
   }
 }
 
