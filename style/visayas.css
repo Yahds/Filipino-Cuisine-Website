@@ -249,7 +249,9 @@ section #front{
   margin-bottom: 20px;
 }
 
-.food-list {
+.food-list-1, .food-list-2{
+  width: 580px;
+  height: 980px;
   background-color: #E8F3F1;
   border: 2px solid #000000;
   border-radius: 10px;
@@ -402,7 +404,7 @@ footer{
     word-wrap: break-word;
   }
 
-  .Content .food-list .photo-owner{
+  .Content .food-list-1 .food-list-2 .photo-owner{
     color: #FDE48D;
     font-size: .7em;
     word-wrap: break-word;
@@ -509,7 +511,7 @@ footer{
   }
 
   .sec {
-    background: #FE9DBE;
+    background: rgb(41, 41, 41);
     box-shadow: 0 0 20px rgba(82, 78, 78, 0.1);
     padding: 20px;
   }
@@ -540,6 +542,14 @@ footer{
     word-wrap: break-word;
   }
 
+  #refarea {
+    padding: 10px;
+    background-color: #FE9DBE;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
   /*content container styles */
   .content-container {
     display: flex;
@@ -563,8 +573,19 @@ footer{
   }
 
   /*food list styles */
-  .food-list {
+  .food-list-1 {
+    width: auto;
+    height: auto;
     background-color: #77D7FD;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .food-list-2 {
+    width: auto;
+    height: auto;
+    background-color: #FE9DBE;
     border: 2px solid #000000;
     border-radius: 10px;
     margin-bottom: 10px;
