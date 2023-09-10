@@ -134,7 +134,7 @@ a{
   .content-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px; /* Adjust the gap between content items */
+    gap: 30px; 
     justify-content: center;
     padding: 20px;
   }
@@ -142,15 +142,15 @@ a{
   .Content {
     align-items: center;
     display: flex;
-    flex: 0 0 calc(33.33% - 30px); /* Adjust the width as needed */
+    flex: 0 0 calc(33.33% - 30px); 
     flex-direction: column;
-    border-radius: 10px; /* Add border-radius for curved corners */
-    background-color: #f1e2e2; /* Add background color */
+    border-radius: 10px; 
+    background-color: #f1e2e2; 
     background-image: url("../images/mindanaoimgs/min.jpg");
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); 
     padding: 20px;
     text-align: center;
-    margin: 20px; /* Add margin to create spacing */
+    margin: 20px;
   }
 }
 
