@@ -1,6 +1,7 @@
 /* All */
 body{
   font-family: 'Poppins', sans-serif;
+  background-color: darkgrey;
   transition: 0.3s;
   padding: 0;
   margin: 0;
@@ -129,19 +130,28 @@ a{
     margin: auto;
 }
 
-.Content {
+@media (min-width: 601px) {
+  .content-container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px; /* Adjust the gap between content items */
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .Content {
     align-items: center;
-    padding-top: 10px;
-    width: 500px;
-    align-content: center;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
+    display: flex;
+    flex: 0 0 calc(33.33% - 30px); /* Adjust the width as needed */
+    flex-direction: column;
+    border-radius: 10px; /* Add border-radius for curved corners */
+    background-color: #f1e2e2; /* Add background color */
+    background-image: url("../images/mindanaoimgs/min.jpg");
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    padding: 20px;
     text-align: center;
+    margin: 20px; /* Add margin to create spacing */
+  }
 }
 
 .Content p {
@@ -181,6 +191,7 @@ a{
     margin-left: 50px;
     margin-right: 50px;
     background-color: white;
+    background-image: url("../images/mindanaoimgs/min.jpg");
     border-radius: 2rem;
 }
 
@@ -189,6 +200,7 @@ a{
   margin-left: 50px;
   margin-right: 50px;
   background-color: white;
+  background-image: url("../images/mindanaoimgs/min.jpg");
   border-radius: 2rem;
 }
 
