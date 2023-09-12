@@ -396,6 +396,7 @@ footer{
           gap: var(--_spacer);
           grid-template-rows: min-content;
           padding: var(--my-variable);
+          font-size: large;
         }
     .content> img {
           inline-size: 100%;
