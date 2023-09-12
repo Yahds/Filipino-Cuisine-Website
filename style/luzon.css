@@ -163,6 +163,110 @@ figcaption {
 .references p {
     padding: 10px;
   }
+
+/* Map: Luzon, Visayas, Mindanao (TEXT) */
+.map-txt-section{
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;  
+  padding: 0;
+}
+
+.map-txt-1{
+  font-size: 2.5vmax;
+  font-weight: bold;
+  margin: 10px 15% 0;  
+  padding: 0;
+}
+
+.map-txt-2{
+  font-size: 1.5vmax;
+  font-weight: bold;
+  margin: 20px 15% 0;  
+  padding: 0;
+}
+
+/* Map: Luzon, Visayas, Mindanao */
+.map-section{
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  width: 100%;
+  margin: 100px 0 0;
+}
+
+.p-column{
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  gap: 30px;
+}
+
+
+.p-img-container1, .p-img-container2, .p-img-container3 {
+  width: 70%;
+  max-width: 500px;
+}
+
+.p-img-container1{
+  background-color: rgb(88, 88, 255);
+}
+
+.p-img-container2{
+  background-color: yellow;
+}
+
+.p-img-container3{
+  background-color: rgb(255, 91, 91);
+}
+
+.p-outline-img.top{
+  background-image: url('../images/homeimgs/luzon-outline.png');
+  transition: background-image 0.3s;
+}
+
+.p-outline-img.top, .p-outline-img.middle, .p-outline-img.bottom {
+  padding-top: 450px;
+  background-image: url('../images/homeimgs/outline.png');
+  background-repeat: no-repeat;
+  background-size: 380px;
+  background-color: white;
+  transition: 0.3s;
+  border-radius: 80%;  
+}
+
+
+.p-img-container1:hover .p-outline-img.top {
+  background-image: url('../images/homeimgs/Luzon.png'); 
+  cursor:pointer;
+}
+
+.p-img-container2:hover .p-outline-img.middle {
+  background-image: url('../images/homeimgs/Visayas.png');
+  cursor:pointer;
+}
+
+.p-img-container3:hover .p-outline-img.bottom {
+  background-image: url('../images/homeimgs/Mindanao.png');
+  cursor:pointer;
+}
+
+.map-ref a{
+  display: block;
+  text-align: center;
+  color: rgb(162, 161, 161);
+  font-size: 2vmin;
+}
+
+.map-ref a:hover{
+  color: red;
+}
+
+
 /* About us*/
 #about-us-section{
   background-color: rgb(42,39,39);
@@ -378,6 +482,37 @@ footer{
   .references {
       display: none !important;
     }
+
+   /* Map:Luzon-Visayas-Mindanao */
+  .map-txt-section{
+    background-color: aquamarine;
+    border-radius: 40px;
+  }
+  .map-section{
+    margin-top: 35px;
+    justify-content: center;
+  }
+  .p-column {
+    flex-direction: column;
+  }
+
+  .p-img-container1, .p-img-container2, .p-img-container3{
+    align-self: center;
+    width: 100%;
+  }
+
+  .p-img-container1{
+    background-color: #77D7FD;
+  }
+
+  .p-img-container2{
+    background-color: #FDE48D;
+  }
+
+  .p-img-container3{
+    background-color: #FE9DBE;
+  }
+
   /* Footer */
   footer {
       background-color: whitesmoke;
