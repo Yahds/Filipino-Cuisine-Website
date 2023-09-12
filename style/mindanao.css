@@ -426,6 +426,39 @@ footer{
   color: red;
 }
 
+.follow{
+  padding: 0 0 0;
+  margin: 20px 0 0;
+}
+
+.social-links, .social-icons{
+  justify-content: center;
+  padding: 0;
+}
+
+.social-icons a{
+  border-radius: 50%;
+  padding: 10px 15px 10px;
+  margin: 0 10px;
+  color: white
+}
+
+.social-icons .facebook{
+  background-color: blue;
+}
+
+.social-icons .instagram{
+  background-color: rgb(229, 229, 21);
+}
+
+.social-icons .youtube{
+  background-color: red;
+}
+
+.social-icons a:hover{
+  background-color: aquamarine;
+}
+
 .credits{
   font-size: x-small;
   align-self: center;
