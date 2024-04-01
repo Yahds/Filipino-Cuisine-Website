@@ -1,5 +1,3 @@
-# WebSysDev-Activity1
-Showcasing different cuisine in the three major islands of the Philippines
 
 ***
 ## Name
